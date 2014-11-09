@@ -1,0 +1,36 @@
+{
+    "name":"jamescowie/magento-hhvm-module-compatibility",
+    "description":"Magento installation with a bunch of composer-installed modules for the purpose of checking their compatibility with HHVM.",
+    "license": "OSL-3.0",
+    "require": {
+        "magento-hackathon/magento-composer-installer":"*",
+        "aoe/amazon-cdn": "~1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/danslo/Aoe_AmazonCdn.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/danslo/LibraryRewrite.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/aws/aws-sdk-php.git"
+        },
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+    "extra":{
+        "magento-root-dir": "www",
+        "magento-force": "override",
+        "magento-deploystrategy":"symlink"
+    }
+}

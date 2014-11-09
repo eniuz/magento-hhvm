@@ -1,0 +1,29 @@
+# General
+*.vagrant
+.bundle
+bin/*
+.DS_Store
+secret.key
+
+# Composer
+vendor
+composer.phar
+
+# Frontend
+.sass-cache/*
+*.css.map
+styles.css
+node_modules/*
+npm-debug.log
+bower_components/*
+scripts.min.js
+core.min.js
+
+# Magento
+www/app/etc/local.xml
+www/errors/local.xml
+www/media
+www/privatesales
+www/var
+www/downloader/cache.cfg
+www/downloader/connect.cfg
